@@ -8,6 +8,6 @@ Just grab the white vertical bar and check the image brightness level change.
 - CSS
 - Javascript
 
-### Here's the screenshot of it:
+### Here's the screenshot:
 
 ![](./Before-After.jpg)
