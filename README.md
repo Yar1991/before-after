@@ -10,4 +10,4 @@ Just grab the white vertical bar and check the image brightness level change.
 
 ### Here's the screenshot of it:
 
-[](./Before-After.jpg)
+![](./Before-After.jpg)
