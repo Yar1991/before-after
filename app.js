@@ -8,6 +8,7 @@ const leftBtn = document.querySelector('.left-arrow');
 const rightBtn = document.querySelector('.right-arrow');
 const leftImg = document.querySelector('.slide-img-before');
 const rightImg = document.querySelector('.slide-img-after');
+const dragImgs = [...document.querySelectorAll('.img')];
 let slideCounter = 0;
 
 const images = [
@@ -22,10 +23,16 @@ const images = [
 
 //  *** events *** //
 
+dragImgs.forEach((image)=>{
+  image.addEventListener('dragstart', (e)=>{
+    e.preventDefault();
+  })
+})
+
 grab.addEventListener('mousedown', ()=>{
   wrapper.addEventListener('mousemove', move);
   grab.addEventListener('mouseup', remove);
-})
+});
 
 leftBtn.addEventListener('click', leftSlide);
 rightBtn.addEventListener('click', rightSlide);
